@@ -1,9 +1,10 @@
-import { baseCohortUrl, myToken } from "./utils";
+import { BASE_URL } from "./utils";
 
 class Api {
     constructor(config) {
         this._url = config.url;
         this._headers = config.headers;
+        this._token = config.token;
     }
 
     _request(urlEndpoint, options) {
@@ -83,14 +84,22 @@ class Api {
             }),
         });
     }
+
+    setToken(token) {
+		this._headers = {
+			'Authorization': `Bearer ${token}`,
+			'Content-Type': 'application/json'
+		};
+	};
 }
 
-const api = new Api({
-    url: baseCohortUrl,
-    headers: {
-        authorization: myToken,
-        "Content-Type": "application/json",
-    },
-});
+const token = localStorage.getItem("jwt");
 
+const api = new Api({
+	url: BASE_URL,
+	headers: {
+		'Authorization': `Bearer ${token}`,
+		'Content-Type': 'application/json'
+	}
+});
 export default api;
