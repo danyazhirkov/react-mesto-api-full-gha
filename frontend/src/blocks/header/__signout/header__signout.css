@@ -1,0 +1,19 @@
+.header__signout {
+    color: #a9a9a9;
+    margin-left: 24px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.header__signout:hover {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 500px) {
+    .header__signout {
+        margin-bottom: 30px;
+    }
+}

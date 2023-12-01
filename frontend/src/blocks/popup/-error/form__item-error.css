@@ -1,0 +1,16 @@
+.form__item-error {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF0000;
+    max-width: 350px;
+    display: block;
+    min-height: 30px;
+}
+
+@media screen and (max-width:598px) {
+    .form__item-error {
+        max-width: 238px;
+    }
+}

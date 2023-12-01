@@ -1,0 +1,23 @@
+.form__item {
+    max-width: 358px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 10px;
+    outline: none;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.form__item_type_error {
+    border-bottom-color: red;
+}

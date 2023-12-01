@@ -1,0 +1,12 @@
+.form__item-error_active {
+    visibility: visible;
+}
+
+.form__item-error_active:first-of-type {
+    margin-top: -25px;
+    margin-bottom: 13px;
+}
+
+.form__item-error_active:last-of-type {
+    margin-top: 5px;
+}

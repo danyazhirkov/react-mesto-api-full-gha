@@ -1,0 +1,12 @@
+.page {
+    background-color: #000;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: Inter,Arial\ ,sans-serif;
+    font-weight: 400;
+    margin: 0 auto;
+    min-height: 100vh;
+    min-width: 300px;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 10px;
+}
